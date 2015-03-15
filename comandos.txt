@@ -1,3 +1,6 @@
+"#" - comentário no .gitignore
+
+
 # adicionar repositório remoto à um local
 git remote add origin <url>
 
@@ -17,4 +20,7 @@ git commit --amend -m "<novo nome>"
 
 # renomer histórico de commits
 git rebase -i HEAD~1
+git commit --amend
+git rebase --continue
+git push origin master -f
 
