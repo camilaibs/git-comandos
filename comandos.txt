@@ -1,0 +1,20 @@
+# adicionar repositório remoto à um local
+git remote add origin <url>
+
+
+# alterar url de repositório remoto
+git remote set-url origin <url>
+
+
+# alterar último commit
+git commit --amend
+git push origin master -f
+
+
+# renomear último commit
+git commit --amend -m "<novo nome>"
+
+
+# renomer histórico de commits
+git rebase -i HEAD~1
+
