@@ -24,3 +24,7 @@ git commit --amend
 git rebase --continue
 git push origin master -f
 
+
+# alterar o autor de um commit
+git commit --amend --author "Novo nome <email@email.com>
+
