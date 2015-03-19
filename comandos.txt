@@ -1,24 +1,27 @@
-"#" - comentário no .gitignore
+"#" - comentÃ¡rio no .gitignore
 
 
-# adicionar repositório remoto à um local
+# adicionar repositÃ³rio remoto Ã  um local
 git remote add origin <url>
 
+# ver url de repositorio remoto
+git remote -v
 
-# alterar url de repositório remoto
+
+# alterar url de repositÃ³rio remoto
 git remote set-url origin <url>
 
 
-# alterar último commit
+# alterar Ãºltimo commit
 git commit --amend
 git push origin master -f
 
 
-# renomear último commit
+# renomear Ãºltimo commit
 git commit --amend -m "<novo nome>"
 
 
-# renomer histórico de commits
+# renomer histÃ³rico de commits
 git rebase -i HEAD~1
 git commit --amend
 git rebase --continue
