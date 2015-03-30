@@ -35,3 +35,7 @@ git commit --amend --author "Novo nome <email@email.com>
 # alterar o autor de mais de um commit
 git filter-branch -f --commit-filter "if [ "$GIT_AUTHOR_EMAIL"="camila.belo@rocket-internet.com.br" ]; then export GIT_COMMITTER_NAME="camilaibs"; export GIT_COMMITTER_EMAIL="camilaibs@gmail.com"; export GIT_AUTHOR_NAME="camilaibs"; export GIT_AUTHOR_EMAIL="camilaibs@gmail.com"; fi; git commit-tree "$@""
 
+
+# deletar branch
+git push origin :restaurant_chain (remota)
+git branch -D restaurant_chain (local)
